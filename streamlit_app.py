@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 
-fmcsa_offline = pd.read_parquet('FMCSA_CENSUS1_2023Nov.parquet.gzip' ,engine='auto')
+fmcsa_offline = pd.read_parquet('FMCSA_CENSUS1_2023Nov.csv')
 
 fmcsa_online = pd.read_csv('safer_online.csv')
 fmcsa_online = fmcsa_online.rename(columns={"USDOT Number": "DOT_NUMBER"})
