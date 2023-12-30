@@ -4,8 +4,8 @@ import pandas as pd
 #sns.set()
 
 import streamlit as st
-#import plotly
-#import plotly.express as px
+import plotly
+import plotly.express as px
 
 
 st.set_page_config(page_title='Carrier-Master', 
