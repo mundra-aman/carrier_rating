@@ -1,11 +1,11 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.set()
+#import matplotlib.pyplot as plt
+#import seaborn as sns
+#sns.set()
 
 import streamlit as st
-import plotly
-import plotly.express as px
+#import plotly
+#import plotly.express as px
 
 
 st.set_page_config(page_title='Carrier-Master', 
