@@ -85,20 +85,18 @@ def fmcsa_on_off():
 
 fmcsa_on_off = fmcsa_on_off()
 
-cols = ["DOT_NUMBER", "MC/MX/FF Number(s)", "LEGAL_NAME", "DBA_NAME", "CARRIER_OPERATION", "NBR_POWER_UNIT", 
-        "DRIVER_TOTAL", "PHY_STREET", "PHY_CITY", "PHY_STATE", "STATE", "PHY_ZIP", "PHY_COUNTRY", "MAILING_STREET",
-        "MAILING_CITY", "MAILING_STATE", "MAILING_ZIP", "MAILING_COUNTRY", "TELEPHONE", "EMAIL_ADDRESS", 
-        "MCS150_DATE", "Entity Type", "Operating Status", "Out of Service Date", "Phone" ]
+#cols = ["DOT_NUMBER", "MC/MX/FF Number(s)", "LEGAL_NAME", "DBA_NAME", "CARRIER_OPERATION", "NBR_POWER_UNIT", 
+#        "DRIVER_TOTAL", "PHY_STREET", "PHY_CITY", "PHY_STATE", "STATE", "PHY_ZIP", "PHY_COUNTRY", "MAILING_STREET",
+#        "MAILING_CITY", "MAILING_STATE", "MAILING_ZIP", "MAILING_COUNTRY", "TELEPHONE", "EMAIL_ADDRESS", 
+#        "MCS150_DATE", "Entity Type", "Operating Status", "Out of Service Date", "Phone" ]
 
-fmcsa_on_off = fmcsa_on_off.filter(cols)
+#fmcsa_on_off = fmcsa_on_off.filter(cols)
 
-fmcsa_on_off['DRIVER_TOTAL'] = fmcsa_on_off['DRIVER_TOTAL'].fillna(0).astype(int)
-fmcsa_on_off['NBR_POWER_UNIT'] = fmcsa_on_off['NBR_POWER_UNIT'].fillna(0).astype(int)
+#fmcsa_on_off['DRIVER_TOTAL'] = fmcsa_on_off['DRIVER_TOTAL'].fillna(0).astype(int)
+#fmcsa_on_off['NBR_POWER_UNIT'] = fmcsa_on_off['NBR_POWER_UNIT'].fillna(0).astype(int)
 
 
     
-
-
 
 container = st.container(border=True)
 container.header("🗄 Database", help="The gigantic storage drawer that holds many collections of your data together.")
