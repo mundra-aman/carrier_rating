@@ -80,7 +80,7 @@ with st.sidebar.expander("Acknowledgments"):
 
 @st.cache_data
 def fmcsa_on_off():
-    fmcsa_on_off = pd.read_parquet('fmcsa_on_off.parquet.gzip')
+    fmcsa_on_off = pd.read_parquet('/fmcsa_on_off.parquet.gzip')
     return fmcsa_on_off
 
 fmcsa_on_off = fmcsa_on_off()
